@@ -27,10 +27,10 @@ multiply(a , b) {
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
 //write a function that takes your age and returns it to you in dog years - they say that 1 human year is equal to seven dog years 
-
-
-
-
+function dogAge(age) {
+    var dogYears = 7 * age;
+    console.log("You are " + dogYears + " dog-years old");
+}
 
 /************************************************************** Task 3 **************************************************************/
 //Dog feeder 
