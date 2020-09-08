@@ -75,10 +75,42 @@ function DoggieDiet(age , weight) {
 // it should return you won or you lost based on the rules of the game (you may need to look up the rules if you have not played before)
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
-
-  
-  
-
+var win = "You Win!";
+var loss = "You lose.";
+var computerChoice = Math.random();
+if (computerChoice < .34) {
+  computerChoice = "rock";
+} else if (computerChoice < .67) {
+  computerChoice = "paper";
+} else {
+  computerChoice = "scissors";
+}
+function iChoose(userChoice) {
+  if (userChoice === computerChoice) {
+    var result = "It's a tie!";
+  } else if (userChoice === "rock") {
+    if(computerChoice === "paper") {
+      var result = loss;
+    } else if(computerChoice === "scissors") {
+      var result = win;
+    }
+  } else if (userChoice === "paper") {
+    if (computerChoice === "rock") {
+      var result = win;
+    } else if (computerChoice === "scissors") {
+      var result = loss;
+    }
+  } else if (userChoice === "scissors") {
+    if (computerChoice === "rock") {
+      var result = loss;
+    } else if (computerChoice === "paper") {
+      var result = win;
+    }
+  } else {
+    var result = "You're not playing by the rules.";
+  }
+console.log("You chose " + userChoice + " the computer chose " + computerChoice + ". " + result)
+}
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
