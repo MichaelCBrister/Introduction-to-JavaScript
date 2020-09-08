@@ -114,16 +114,16 @@ console.log("You chose " + userChoice + " the computer chose " + computerChoice 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
 //a. KM to Miles - should take the number of kilometers and convert it to the equal number of miles
-
-
-
-
+function km(kilometers) {
+    var miles = (kilometers / 1.609);
+    console.log(kilometers + " kilometers is equal to " + miles + " miles.");
+}
 
 //b. Feet to CM - should take the number of feet and convert it to the equal number of centimeters
-  
-
-
-
+function feet(ft) {
+    var cm = (ft * 30.48);
+    console.log(ft + " feet is equal to " + cm + " centimeters.");
+}
 
 /************************************************************** Task 6 **************************************************************/
 // 99 bottles of soda on the wall
