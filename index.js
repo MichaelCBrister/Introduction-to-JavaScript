@@ -129,11 +129,30 @@ function feet(ft) {
 // 99 bottles of soda on the wall
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
-  
-
-
-
-
+function annoyingSong() {
+    var word = "bottles";
+    var count = 99;
+    while (count > 0) {
+      if (count == 1){
+        var word = "bottle"
+        }
+      console.log(count + " " + word + " of beer on the wall");
+      console.log(count + " " + word + " of beer,");
+      console.log("Take one down, pass it around,");
+      count = count - 1;
+      if (count > 0) {
+        if (count == 1){
+          var word = "bottle"
+          }
+      } else {
+        if (count < 1){
+          var word = "bottles"
+          }
+        console.log("No more " + word + " of beer on the wall.");
+      }
+    }
+  }
+annoyingSong();
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
 //write a javaScript program that takes a mark out of 100 and returns a corisponding letter grade 
