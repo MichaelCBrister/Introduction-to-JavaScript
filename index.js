@@ -161,11 +161,20 @@ annoyingSong();
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-  
-
-  
-  
-
+function grade(number) {
+    if (number >= 90) {
+        var letter = "A";
+    } else if (number >= 80) {
+        var letter = "B";
+    } else if (number >= 70) {
+        var letter = "C";
+    } else if (number >= 60) {
+        var letter = "D";
+    } else {
+        var letter ="F";
+    }
+    console.log(number + " " + letter);
+}
 /************************************************************** Stretch **************************************************************/
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
 // Hint - you may need to study tomorrow's traning kit on arrays 
