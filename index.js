@@ -49,11 +49,26 @@ function dogAge(age) {
 // 7 - 12 months 4% of their body weight
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
-  
-
-
-
-
+function DoggieDiet(age , weight) {
+    if(age >= 1) {
+      if(weight <= 5) {
+        var dogFood = (.05 * weight);
+      } else if(weight <= 10) {
+        var dogFood = (.04 * weight);
+      } else if(weight <= 15) {
+        var dogFood = (.03 * weight);
+      } else if(weight > 15) {
+        var dogFood = (.02 * weight);
+      }
+    } else if(age <= .33) {
+      var dogFood = (.1 * weight);
+    } else if(age <= .58) {
+      var dogFood = (.05 * weight);
+    } else if(age > .58) {
+      var dogFood = (.04 * weight);
+    }
+    console.log("Your dog needs " + dogFood + "lbs of raw food per day.")
+  }
 /************************************************************** Task 4 **************************************************************/
 // Rock, Paper, Sissors
 // Your function should take a string (either rock paper or sissors)
